@@ -338,7 +338,7 @@ header .badges .badge {
   position: relative;
 }
 
-.notice .notice-line .be-left {
+.notice .notice-line .bg-left {
   position: absolute;
   top: 0;
   left: 0;
@@ -347,7 +347,7 @@ header .badges .badge {
   background-color: #333;
 }
 
-.notice .notice-line .be-right {
+.notice .notice-line .bg-right {
   position: absolute;
   top: 0;
   right: 0;
