@@ -75,3 +75,20 @@ const promotionToggleBtn = document.querySelector('.toggle-promotion');
 promotionToggleBtn.addEventListener('click', () => {
   promotionEl.classList.toggle('hide');
 });
+
+const random = (min, max) =>
+  parseFloat((Math.random() * (max - min) + min).toFixed(2));
+
+const floatingObject = (selector, size, delay) => {
+  gsap.to(selector, random(1.5, 2.5), {
+    y: size,
+    repeat: -1,
+    yoyo: true,
+    ease: Power1.easeInOut,
+    delay: random(0, delay),
+  });
+};
+
+floatingObject('.floating1', 15, 1);
+floatingObject('.floating2', 15, 0.5);
+floatingObject('.floating3', 20, 1.5);
