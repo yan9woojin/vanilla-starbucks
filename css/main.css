@@ -627,7 +627,6 @@ header .badges .badge {
 
 .youtube .youtube__area {
   width: 1920px;
-  /* background-color: orange; */
   position: absolute;
   left: 50%;
   margin-left: calc(1920px / -2);
@@ -865,4 +864,64 @@ header .badges .badge {
 
 .find-store .text-group .description {
   margin-bottom: 20px;
+}
+
+/* AWARDS */
+.awards {
+  background-color: #272727;
+}
+
+.awards .inner {
+  padding: 40px 0;
+}
+
+.awards .swiper {
+  width: 100%;
+  height: 40px;
+}
+
+.awards .swiper-button-prev,
+.awards .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  outline: none;
+  color: #fff;
+  opacity: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.awards .swiper-button-prev {
+  left: -100px;
+}
+
+.awards .swiper-button-next {
+  right: -100px;
+}
+
+.awards .swiper-button-prev:hover,
+.awards .swiper-button-next:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.awards .swiper-button-prev::after,
+.awards .swiper-button-next::after {
+  transform: scale(0.3);
+  position: relative;
+}
+
+.awards .swiper-button-prev::after {
+  right: 1px;
+}
+
+.awards .swiper-button-next::after {
+  left: 1px;
 }
