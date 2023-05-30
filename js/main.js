@@ -92,3 +92,14 @@ const floatingObject = (selector, size, delay) => {
 floatingObject('.floating1', 15, 1);
 floatingObject('.floating2', 15, 0.5);
 floatingObject('.floating3', 20, 1.5);
+
+const spyEls = document.querySelectorAll('section.scroll-spy');
+
+spyEls.forEach((spyEl) => {
+  new ScrollMagic.Scene({
+    triggerElement: spyEl,
+    triggerHook: 0.8,
+  })
+    .setClassToggle(spyEl, 'show')
+    .addTo(new ScrollMagic.Controller());
+});
